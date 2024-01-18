@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/how.css" rel="stylesheet">
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/all.min.css" rel="stylesheet">
+    <script src="how.js"></script>
+    <title>How well do you know me?</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">How well do you know me?</h1>
+            <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <p>Funny questions to know ho much do you know about each other</p>
+    </div>
+    <div class="container">
+        <form action="">
+            <p class="question">1.What is my favourite food?</p>
+            <div>
+                <div class="chicken">
+                    <input type="radio" id="chicken" name="food">
+                    <label for="chicken">Chicken</label>
+                </div>
+                <div class="shrimp" onclick="getScore()">
+                    <input type="radio" id="shrimp" name="food">
+                    <label for="shrimp">Shrimp</label>
+                </div>
+                <div class="pasta">
+                    <input type="radio" id="Pasta" name="food">
+                    <label for="Pasta">Pasta</label>
+                </div>
+            </div>
+
+            <p class="question">2.What is my favourite color?</p>
+            <div>
+                <div class="purple">
+                    <input type="radio" id="Purple" name="color">
+                    <label for="Purple">Purple</label>
+                </div>
+                <div class="pink">
+                    <input type="radio" id="Pink" name="color">
+                    <label for="Pink">Pink</label>
+                </div>
+                <div class="blue">
+                    <input onclick="getScore()" type="radio" id="blue" name="color">
+                    <label for="blue">Blue</label>
+                </div>
+            </div>
+            <p class="question">3.What is my favourite band?</p>
+            <div>
+                <div class="twenty">
+                    <input type="radio" id="twenty" name="band">
+                    <label for="twenty">Twenty one pilots</label>
+                </div>
+                <div class="cold">
+                    <input type="radio" id="cold" name="band">
+                    <label for="cold">Cold play </label>
+                </div>
+                <div class="one">
+                    <input onclick="getScore()" type="radio" id="one" name="band">
+                    <label for="one">One direction</label>
+                </div>
+            </div>
+            <p class="question">4.What do i do when sad?</p>
+            <div>
+                <div class="walk">
+                    <input onclick="getScore()" type="radio" id="walk" name="sad">
+                    <label for="walk">Go for a walk </label>
+                </div>
+                <div class="read">
+                    <input type="radio" id="read" name="sad">
+                    <label for="read">Reading a book</label>
+                </div>
+                <div class="watch">
+                    <input type="radio" id="watch" name="sad">
+                    <label for="watch">Watch my favourite series</label>
+                </div>
+            </div>
+            <p class="question">5.What do i do when happy?</p>
+            <div>
+                <div class="talk">
+                    <input type="radio" id="talk" name="happy">
+                    <label for="talk">I tend to talk a lot </label>
+                </div>
+                <div class="smile">
+                    <input type="radio" id="smile" name="happy">
+                    <label for="smile">I tend to smile more</label>
+                </div>
+                <div class="move">
+                    <input onclick="getScore()" type="radio" id="move" name="happy ">
+                    <label for="move">I tend to move more than usual</label>
+                </div>
+            </div>
+        </form>
+        <p id="score"></p>
+    </div>
+
+</body>
+
+</html>

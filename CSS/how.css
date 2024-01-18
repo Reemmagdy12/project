@@ -1,0 +1,78 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(234 213 239 / 34%);
+}
+
+:root {
+    --main-color: rgb(228, 104, 125);
+    --main-margin: 15px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 70%;
+
+}
+
+.fa-circle-question {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 50px;
+    flex-basis: 30%;
+}
+
+.header+p {
+    color: var(--main-color);
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: var(--main-margin);
+}
+
+form p {
+    margin-bottom: var(--main-margin);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form input {
+    color: var(--main-color);
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--main-color);
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.question+div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: var(--main-margin);
+}
+
+#score {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: var(--main-margin);
+    text-align: center;
+}
